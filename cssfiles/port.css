@@ -12,21 +12,55 @@ p {
 	font-size: 20px;
 }
 
+
+.flexforinfo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #448ccc;
+}
+
+
 #me {
-	padding: 18em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	/*padding: 18em;*/
 	background-color: #003470;
 	color: #ffffff;
 	}
 
 #contact {
-	padding: 16.35em;
+	/*padding: 16.35em;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 	background-color: #a1d39b;
 	color: #ffffff; 
 
 }
 
 #artworks {
-	padding: 19.12em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	/*padding: 19.12em;*/
 	background-color: #01aa9c;
 	color: #ffffff; 
 
@@ -34,6 +68,10 @@ p {
 
 
 form {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: flex-start;
 	background-color: #e4df9b;
 	padding: 27px;
 	padding-right: 0px;
@@ -41,15 +79,24 @@ form {
 }
 
 .formthings {
-	padding: 10px;
-	padding-right: 100px;
-	margin: 20px;
-	margin-left: 50px;
+	/*padding: 10px;
+	padding-right: 100px;*/
+/*	margin: 20px;
+	margin-left: 50px;*/
 }
 
 button {
 	margin: 20px;
 	margin-left: 50px;
+	border-radius: 20px;
+	background-color: #01aa9c;
+	color: #ffffff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-color: #01aa9c;
+}
+button:hover {
+	background-color: #c4df9b;
 }
 
 .artwork {
@@ -78,4 +125,19 @@ table {
 
 a:hover {
 	color: #fff79a;
+}
+
+@media (max-width: 500px) {
+	/*button {
+		background-color: blue;
+	}*/
+	nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	background-color: #448ccc;
+	}
 }
